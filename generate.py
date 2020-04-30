@@ -31,9 +31,7 @@ def generate_mock_animatics(directory, shot_name):
     # the file if it doesn't exist
     fp = open(animatic_path, "w")
     # Write some fake data into the file, it's actually a text file with a 'mov' extension
-    fp.write(
-        "This writes a string into the file.\nBackslash and 'n' is a 'newline' character."
-    )
+    fp.write(shot_name)
     # Must close the file after opening it or it will use up memory!
     fp.close()
 
