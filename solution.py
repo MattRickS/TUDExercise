@@ -10,6 +10,8 @@ def setup_sequence(sequence_directory):
 
 
 if __name__ == '__main__':
-    # TODO: Get the filepath passed to the script, warn the user if they use it wrong
+    # TODO: Get the filepath from the user. This can either be done by requesting
+    # user input after the script starts, or by using additional arguments on the
+    # command line. Warn the user if they provide an invalid path.
     path = ""
     setup_sequence(path)
