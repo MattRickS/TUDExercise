@@ -6,7 +6,9 @@ import generate
 import solution
 
 
-# requires pyfakefs, pytest, mock, and pytest-mock
+# requires pillow, pyfakefs, pytest, mock, and pytest-mock
+# Install with:
+# /PATH/TO/YOUR/PYTHON.EXE -m pip install pillow pyfakefs pytest mock pytest-mock
 @mock.patch("generate.Image")
 def test_solution(mock_Image, fs):
     # Mock the behaviour of saving the image to create a fake file instead, as
